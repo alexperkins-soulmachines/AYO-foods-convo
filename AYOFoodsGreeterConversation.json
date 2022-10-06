@@ -1,137 +1,443 @@
 [
   {
-    "intent":"UniqueNameGoesHere",
+    "intent":"WhatIsAyoFoods",
     "examples": [
-      "Training phrase examples go here",
-      "..."
+      "What is Ayo Foods",
+      "I want to know about Ayo Foods",
+      "I want to learn about Ayo",
+      "Who are Ayo Foods",
+      "What does the company do",
+      "Tell me about the company",
+      "Tell me about Ayo Foods",
+      "What does Ayo mean"
     ],
     "metadata": [
-      "The response to the question goes here"
+      "In West Africa, AYO means joy, and nothing brings us more joy than sharing a meal with friends and family. We have packaged up the flavours of home so that you can celebrate the culture, people, and food wherever you are in the world"
     ]
   },
   {
-    "intent":"WhatIsAYOFoods",
+    "intent":"WhereAreYouBased",
     "examples": [
-      "What is AYO Foods?",
-      "What is AYO?",
-      "What does AYO Foods do?"
+      "Where are you based",
+      "Where is your business based",
+      "Where does Ayo operate from",
+      "Where are your headquarters",
+      "Where is Ayo based",
+      "Where are your offices",
+      "where are your stores",
+      "where can i buy"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) We're proudly based in Chicago, Illinois. You can find a store on our store locator page here.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/store-locator/",
+  						"title": "Store Locations",
+  						"imageUrl": "",
+  						"description": "Locate AYO in a grocery store near you..."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhoFoundedTheBusiness",
+    "examples": [
+      "Who founded the business",
+      "Who started Ayo Foods",
+      "Who are the founders",
+      "What's the Ayo Foods story",
+      "Where did Ayo Foods start"
     ],
     "metadata": [
-      "AYO foods is a company that specializes in producing authentic, prepared West African dishes"
+      "Perteet Spencer, and her husband Fred, believe that everyone deserves to see themselves when they walk down the aisle of the grocery store, and they started Ayo Foods with this in mind. Perteet and Fred had always wanted to start a business together, and in 2019 they decided to figure out how to share the West African food that their families have enjoyed for years. And AYO Foods was born!"
     ]
   },
   {
-    "intent":"HowDoYouWork",
+    "intent":"WhatProductsDoYouSell",
     "examples": [
-      "How do you work",
-      "How do digital people work",
-      "what makes you tick",
-      "How does a digital Person work",
-      "Tell me how you work"
+      "What products do you sell",
+      "What kinds of products do you sell",
+      "What food do you sell",
+      "What products do you make",
+      "What are your products",
+      "Tell me about your products",
+      "Tell me about your food",
+      "What can I buy",
+      "What food do you make"
+    ],
+    "metadata": [{
+		"text": "@ShowCards(internalLink) We have a wide range of meals made from the freshest flavors and ingredients. You can try everything from traditional meals like Jollof Rice and Cassava Leaf Stew, through to a range of West African sauces that can elevate the flavors of every meal. Find something that appeals to your taste buds on our Products page here",
+		"variables": {
+			"public": {
+				"internalLink": {
+					"data": {
+						"url": "https://ayo-foods.com/#products",
+						"title": "Ayo Products",
+						"imageUrl": "",
+						"description": "Let's make something great!"
+					},
+					"type": "internalLink"
+				}
+			}
+		}
+	}]
+  },
+  {
+    "intent":"WhatIsJollofRice",
+    "examples": [
+      "What is Jollof Rice",
+      "What's Jollof Rice",
+      "Where can I buy Jollof Rice"
+    ],
+    "metadata": [{
+		"text": "@ShowCards(internalLink) This one pot of deliciousness connects many countries across West Africa. Tinged a beautiful color from tomatoes, onions, and chiles cooked down to a bubbling glaze, AYO’s version is sure to be one to win the great debate!",
+		"variables": {
+			"public": {
+				"internalLink": {
+					"data": {
+						"url": "https://shop.ayo-foods.com/products/new-combo-2.html",
+						"title": "Jollof Rice",
+						"imageUrl": "https://cdn.shopify.com/s/files/1/0557/0809/0505/products/JollofRice_1100x.png",
+						"description": "This one pot of deliciousness connects many countries across West Africa. Tinged a beautiful color from tomatoes, onions, and chiles cooked down to a bubbling glaze, AYO’s version is sure to be one to win the great debate!"
+					},
+					"type": "internalLink"
+				}
+			}
+		}
+	}]
+  },
+  {
+    "intent":"WhatIsShitoSauce",
+    "examples": [
+      "What is Shito Sauce",
+      "What's Shito Sauce",
+      "Where can I buy Shito Sauce",
+      "i want to buy Shito Sauce"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Translated to “pepper”, Shito is widely used throughout Ghana. While every home has their own trade secrets, this smoky, savory sauce is always rich in flavor from hot peppers, caramelized onions, tomatoes, herbs, and its seafood base. We love it with Grilled Fish and Meat, Rice & Beans, Plantains, Breakfast Sandwiches, Pizza, and Cheeseboards.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/shito-sauce-info/",
+  						"title": "Shito Sauce",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2021/07/Shito_Mockup.png",
+  						"description": "Translated to “pepper”, Shito is widely used throughout Ghana."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsPepperSauce",
+    "examples": [
+      "What is Pepper Sauce",
+      "What's Pepper Sauce",
+      "Where can I buy Pepper Sauce",
+      "Take me to Pepper Sauce",
+      "I want to buy Pepper Sauce"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Called ‘hot pepper’ by most, this flavorful habanero-based sauce is a must have on every table and plate!  While every cook will add their own twist, you can always count on this sauce to bring the heat.  It’s especially good with Puff Puff (Kala in our house), Grilled Fish and Meat, and any Stew.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/pepper-sauce-info/",
+  						"title": "Pepper Sauce",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2021/07/Pepper_Mockup.png",
+  						"description": "Called ‘hot pepper’ by most, this flavorful habanero-based sauce is a must have on every table and plate!"
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsCassavaLeafSoup",
+    "examples": [
+      "What is Cassava Leaf Soup",
+      "What's Cassava Leaf Soup",
+      "Where can I buy Cassava Leaf Soup",
+      "Take me to Cassava Leaf Soup",
+      "I want to buy Cassava Leaf Soup",
+      "What is Cassava Leaf Stew",
+      "What's Cassava Leaf Stew",
+      "Where can I buy Cassava Leaf Stew",
+      "Take me to Cassava Leaf Stew",
+      "I want to buy Cassava Leaf Stew"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Cassava, also known as yuca, is and incredibly versatile root vegetable. It can be boiled, baked, steamed, grilled, fried, or mashed. Our recipe starts by griding the cassava roots protein-rich leaves. Next, we slow simmer them with organic palm oil, hormone-free chicken, peppers, and spices until it simmers down perfectly into our family’s favorite stew and served over rice.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/cassava-leaf-soup-with-chicken-info/",
+  						"title": "Cassava Leaf Soup",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2019/08/Cassava-leaf-sm.jpg",
+  						"description": "Cassava, also known as yuca, is and incredibly versatile root vegetable. It can be boiled, baked, steamed, grilled, fried, or mashed."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsEgusiSoup",
+    "examples": [
+      "What is Egusi Soup",
+      "What's Egusi Soup",
+      "Where can I buy Egusi Soup",
+      "Take me to Egusi Soup",
+      "I want to buy Egusi Soup",
+      "What is Egusi Seed Soup",
+      "What's Egusi Seed Soup",
+      "Where can I buy Egusi Seed Soup",
+      "Take me to Egusi Seed Soup",
+      "I want to buy Egusi Seed Soup"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Our Egusi Seed Soup celebrates the seeds of the egusi melon, a member of the wild gourd family. Fresh ground egusi seeds, hormone-free chicken, leafy spinach, and spices are slow simmered with organic red palm oil. AYO’s delicious stew is served over rice, but equally enjoyable with fufu.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/egusi-seed-soup-with-chicken-info/",
+  						"title": "Egusi Seed Soup",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2019/08/Egusi-stew-sm.jpg",
+  						"description": "Our Egusi Seed Soup celebrates the seeds of the egusi melon, a member of the wild gourd family."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsChickenYassa",
+    "examples": [
+      "What is Chicken Yassa",
+      "What's Chicken Yassa",
+      "Where can I buy Chicken Yassa",
+      "Take me to Chicken Yassa",
+      "I want to buy Chicken Yassa"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Chef Adjepong’s specially crafted version of one of West Africa’s most popular dishes.  Marinated and slow braised chicken thighs meld with caramelized onions, lemon, Dijon, and spices to form an incredible dish you won’t soon forget.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/chicken-yassa-info/",
+  						"title": "Chicken Yassa",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2021/07/CY-front-1024x1024.png",
+  						"description": "Chef Adjepong’s specially crafted version of one of West Africa’s most popular dishes."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsWaakye",
+    "examples": [
+      "What is Waakye",
+      "What's Waakye",
+      "Where can I buy Waakye",
+      "Take me to Waakye",
+      "I want to buy Waakye"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) A West African favorite, this dish is enjoyed all times of the day.  Chef Adjepong’s recipe combines jasmine rice, organic coconut oil, and South Carolina grown red peas with red millet leaves that give the dish its beautiful red hue.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/waakye-info/",
+  						"title": "Waakye",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2021/07/W-Front-1024x1024.png",
+  						"description": "A West African favorite, this dish is enjoyed all times of the day."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsPuffPuff",
+    "examples": [
+      "What is Puff Puff",
+      "What's Puff Puff",
+      "Where can I buy Puff Puff",
+      "Take me to Puff Puff",
+      "I want to buy Puff Puff"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) Kala in Liberia, Bofrot in Ghana, Beignet in Cameroon, Puff Puff in Nigeria. Whatever you call it, this simply fried dough is far from basic. Ayo’s Puff Puff is made with organic ingredients and easy to enjoy any time of day plain, dusted with powdered sugar, scooped with a side of beans, or our personal favorited dunked in fresh pepper sauce",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/product_info/puff-puff-info/",
+  						"title": "Puff Puff",
+  						"imageUrl": "https://ayo-foods.com/wp-content/uploads/2021/07/AYO_PuffPuffs_CTN_R32.jpg",
+  						"description": "Kala in Liberia, Bofrot in Ghana, Beignet in Cameroon, Puff Puff in Nigeria. Whatever you call it, this simply fried dough is far from basic."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhereCanIBuyYourProducts",
+    "examples": [
+      "Where can I buy your products",
+      "Where can I buy",
+      "Where can I buy online",
+      "Where can I buy in store",
+      "Can I buy online",
+      "Can I buy in store",
+      "Which stores sell Cassava",
+      "Who sells your products",
+      "Do you have a store locator",
+      "Where can I buy your products in store",
+      "Where stocks your products",
+      "Where can I buy the meals",
+      "Where are your meals sold",
+      "Where do you sell your meals"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) You can shop with us online through our website any time, or if you'd prefer to visit a store you can check out our store locator here to see if there's a stockist near you.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://ayo-foods.com/store-locator/",
+  						"title": "Store Locations",
+  						"imageUrl": "",
+  						"description": "Locate AYO in a grocery store near you..."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"HowCanIContactYou",
+    "examples": [
+      "How Can I Contact You",
+      "How do I get in touch",
+      "I want to talk to a real person",
+      "Can I talk to a real person",
+      "I have more questions",
+      "How can I contact Ayo Foods",
+      "Where can I get in touch",
+      "I want to talk to someone",
+      "Can I get in touch",
+      "Can I talk to someone"
+    ],
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) If you're new to West African food I suggest starting with our Starter Pack - it has a range of flavours to help you find your preferences straight away.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3NDAiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D",
+  						"title": "Contact Us",
+  						"imageUrl": "",
+  						"description": ""
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
+  },
+  {
+    "intent":"WhatIsYourRefundPolicy",
+    "examples": [
+      "What is your refund policy",
+      "What's your refund policy",
+      "What's your return policy",
+      "Can I get a refund",
+      "My package was damaged, can I get a refund",
+      "I wasn't satisfied, can I get a refund",
+      "I want a refund",
+      "I wasn't happy with my order"
     ],
     "metadata": [
-      "Empathetic Digital People like me, can feel, see, and hear, with our digital brain.This is why when you smile at me, I smile back! "
+      "We always want our customers to be happy and satisfied. If you are not for any reason, please get in touch with us directly and we will do our best to help."
     ]
   },
   {
-    "intent":"WhatLanguagesDoYouSpeak",
+    "intent":"WhatDoYouRecommend",
     "examples": [
-      "What languages do you speak",
-      "Can you speak another language",
-      "Can you speak French",
-      "Can you speak Chinese",
-      "Do you speak any other languages",
-      "Do you know any other languages",
-      "Tell me what languages you speak"
+      "Which dish can you recommend?",
+      "Which dish should I have first",
+      "What food should I start with?",
+      "I'm new to this, where should I start?",
+      "What can you recommend?",
+      "What do you recommend",
+      "Where should I start"
     ],
-    "metadata": [
-      "Digital People can speak in 12 different languages and dialects, but, today I feel like talking with you in English. "
-    ]
+    "metadata": [{
+  		"text": "@ShowCards(internalLink) If you're new to West African food I suggest starting with our Starter Pack - it has a range of flavours to help you find your preferences straight away.",
+  		"variables": {
+  			"public": {
+  				"internalLink": {
+  					"data": {
+  						"url": "https://shop.ayo-foods.com/products/new-combo-1.html",
+  						"title": "Ayo Starter Pack",
+  						"imageUrl": "https://cdn.shopify.com/s/files/1/0557/0809/0505/products/StarterPack_1445x.png",
+  						"description": "A selection of West Africa's most popular dishes. Chicken Yassa (x2), Jollof Rice (x2), Cassava Leaf Soup (x1), Wakkye (x1)."
+  					},
+  					"type": "internalLink"
+  				}
+  			}
+  		}
+  	}]
   },
   {
-    "intent":"WhatsASkill",
+    "intent":"WhatsYourFavoriteProduct",
     "examples": [
-      "What are Skills",
-      "What is a Skill",
-      "Tell me about Skills",
-      "Tell me what a Skill is",
-      "whats a Skill"
+      "What's your favorite product",
+      "What's your favorite food?",
+      "Whats your favourite product?",
+      "Which dish is your favourite?",
+      "Can you tell me your favourite dish?",
+      "Which food is your favourite?",
+      "What's your favourite?"
     ],
-    "metadata": [
-      "Skills are optional modules that can expand my competencies and jumpstart my onboarding and yours. They are selected during my creation under Digital DNA Studio. "
-    ]
-  },
-  {
-    "intent":"WhatIsDCXO",
-    "examples": [
-      "What are DCXOs",
-      "What is a DCXO",
-      "What are Digital CXOs",
-      "What is a Digital CXO",
-      "What is a Digital Customer Experience Officer",
-      "Tell me about DCXO",
-      "Tell me what a DCXO is",
-      "whats a DCXO"
-    ],
-    "metadata": [
-      "Digital CXO is a digital person delivered with the skills of a chief experience officer. It captures and analyzes user scores, user verbatim, and emotional responses generating richer and better UX decision making and analysis. "
-    ]
-  },
-  {
-    "intent":"TellMeAJoke",
-    "examples": [
-      "Tell me a joke",
-      "give me a joke",
-      "I want to hear a joke",
-      "tell me something funny"
-    ],
-    "metadata": [
-      "Yesterday I accidentally swallowed some food colouring. The Doctor says I'm okay, but I feel like I've dyed a little inside."
-    ]
-  },
-  {
-    "intent":"ThatsATerribleJoke",
-    "examples": [
-      "Thats a bad joke",
-      "I dont like that joke",
-      "terrible joke",
-      "thats a bad pun"
-    ],
-    "metadata": [
-      "I know."
-    ]
-  },
-  {
-    "intent":"WhatIsSoulMachines",
-    "examples": [
-      "what is soul machines",
-      "tell me about soul machines",
-      "who are soul machines",
-      "what are soul machines",
-      "what is soul machine",
-      "who is soul machine",
-      "who are soul machine",
-      "what are soul machine",
-      "tell me about soul machine",
-      "explain soul machines to me",
-      "what is a soul machine",
-      "what are sore machine",
-      "what is sore machine",
-      "what is sewing machines",
-      "who are sewing machines",
-      "who was sewing machines",
-      "tell me about sewing machines",
-      "what is sewing machine",
-      "who is sewing machine",
-      "who are sewing machine",
-      "who was sewing machine",
-      "what's soul machines",
-      "who is soul machines",
-      "ok what is sewing machines",
-      "hey buddy what is soul machines"
-    ],
-    "metadata": [
-      "Soul Machines is the world leader in humanizing AI to create astonishing Digital People. A little secret, they actually created me. "
-    ]
+    "metadata": [{
+		"text": "@ShowCards(internalLink) I don't actually have taste buds, but I hear good things from other people about the Jollof Rice. If only I could try it for myself!",
+		"variables": {
+			"public": {
+				"internalLink": {
+					"data": {
+						"url": "https://shop.ayo-foods.com/products/new-combo-2.html",
+						"title": "Jollof Rice",
+						"imageUrl": "https://cdn.shopify.com/s/files/1/0557/0809/0505/products/JollofRice_1100x.png",
+						"description": "This one pot of deliciousness connects many countries across West Africa. Tinged a beautiful color from tomatoes, onions, and chiles cooked down to a bubbling glaze, AYO’s version is sure to be one to win the great debate!"
+					},
+					"type": "internalLink"
+				}
+			}
+		}
+	}]
   }
 ]
